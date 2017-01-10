@@ -34,7 +34,6 @@ db.once("open", function() {
 });
 
 
-
 //--- routes here ------
 app.get('/', function(req, res) {
 	res.send(index.html);
@@ -78,8 +77,6 @@ app.get('/getHacks', function(req, res) {
 
 
 
-
-
 //creates a new Note, or replacing the existing one
 app.post('/addNote/:id', function () {
 	//creates a new Note, and takes the req.body as the note.
@@ -88,7 +85,6 @@ app.post('/addNote/:id', function () {
 	//then find the article with the adjacent ID, and populate that article with the newNote. 
 	//"findOneAndUpdate"
 	//then send the note to the page. 
-
 });
 
 //deletes the article's note
